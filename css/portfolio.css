@@ -1,0 +1,343 @@
+/* =====================================
+PORTFOLIO
+===================================== */
+
+.portfolio-section{
+
+    padding:90px 0;
+
+}
+
+.portfolio-header{
+
+    text-align:center;
+
+    margin-bottom:60px;
+}
+
+.portfolio-tag{
+
+    color:#EF443B;
+
+    font-size:14px;
+
+    letter-spacing:3px;
+
+    font-weight:700;
+}
+
+.portfolio-header h2{
+
+    font-size:52px;
+
+    color:#fff;
+
+    margin:15px 0;
+}
+
+.portfolio-header p{
+
+    color:#bdbdbd;
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.8;
+}
+
+.portfolio-wrapper{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+}
+
+.portfolio-slider{
+
+    display:flex;
+
+    gap:25px;
+
+    overflow-x:auto;
+
+    overflow-y:hidden;
+
+    scroll-behavior:smooth;
+
+    scrollbar-width:none;
+}
+
+.portfolio-slider::-webkit-scrollbar{
+    display:none;
+}
+
+.portfolio-card{
+
+    min-width:320px;
+
+    background:#111;
+
+    border:1px solid rgba(239,68,59,.15);
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    text-decoration:none;
+
+    transition:.4s;
+}
+
+.portfolio-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 30px rgba(239,68,59,.20);
+}
+
+.portfolio-image{
+
+    height:230px;
+
+    overflow:hidden;
+}
+
+.portfolio-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.5s;
+}
+
+.portfolio-card:hover img{
+
+    transform:scale(1.08);
+}
+
+.portfolio-content{
+
+    padding:25px;
+}
+
+.portfolio-content span{
+
+    color:#EF443B;
+
+    font-size:13px;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+}
+
+.portfolio-content h3{
+
+    margin-top:12px;
+
+    color:#fff;
+
+    line-height:1.5;
+
+    font-size:24px;
+}
+
+.portfolio-arrow{
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#111;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    flex-shrink:0;
+}
+
+.portfolio-arrow:hover{
+
+    background:#EF443B;
+}
+
+.left-arrow{
+
+    margin-right:20px;
+}
+
+.right-arrow{
+
+    margin-left:20px;
+}
+
+.portfolio-btn-wrap{
+
+    text-align:center;
+
+    margin-top:60px;
+}
+
+.portfolio-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:16px 36px;
+
+    border:2px solid #EF443B;
+
+    border-radius:50px;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    transition:.4s;
+}
+
+.portfolio-btn:hover{
+
+    background:#EF443B;
+
+    box-shadow:0 0 25px rgba(239,68,59,.35);
+}
+
+
+
+/* =====================================
+   MOBILE PORTFOLIO
+===================================== */
+
+@media (max-width: 768px){
+
+    .portfolio-wrapper{
+
+        position:relative;
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:center;
+
+    }
+
+    .portfolio-slider{
+
+        width:100%;
+
+        overflow-x:auto;
+
+        scroll-snap-type:x mandatory;
+
+        scrollbar-width:none;
+
+    }
+
+    .portfolio-slider::-webkit-scrollbar{
+
+        display:none;
+
+    }
+
+    .portfolio-card{
+
+        min-width:100%;
+
+        max-width:100%;
+
+        scroll-snap-align:center;
+    }
+
+    .portfolio-image{
+
+        height:220px;
+    }
+
+    .portfolio-content{
+
+        padding:20px;
+    }
+
+    .portfolio-content h3{
+
+        font-size:22px;
+    }
+
+    .portfolio-arrow{
+
+        width:45px;
+
+        height:45px;
+
+        font-size:18px;
+
+        position:absolute;
+
+        z-index:10;
+    }
+
+    .left-arrow{
+
+        left:-5px;
+    }
+
+    .right-arrow{
+
+        right:-5px;
+    }
+
+}
+
+@media (max-width:576px){
+
+    .portfolio-section{
+
+        padding:80px 0;
+    }
+
+    .portfolio-header h2{
+
+        font-size:32px;
+    }
+
+    .portfolio-header p{
+
+        font-size:15px;
+
+        line-height:1.8;
+    }
+
+    .portfolio-card{
+
+        min-width:100%;
+    }
+
+    .portfolio-image{
+
+        height:200px;
+    }
+
+    .portfolio-content h3{
+
+        font-size:20px;
+    }
+
+}
